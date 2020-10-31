@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .flex-container{
+      background-color: orange;
+      display: flex;
+      /* flex: 1; */
+      flex-direction: row;
+      align-items:center;
+      /* justify-content: space-evenly; */
+      height: 50vh;
+    }
+
+    .item{
+      background: #f4f4f4;
+      color:#333;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: #ccc 2px solid;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      /* width: 200px; */
+      text-align: center;
+      flex: 0;
+      
+    }
+
+     .item2{
+      /* align-self: flex-start; */
+      align-items: center;
+      align-items: stretch;
+    } 
+
+/* 
+    .item1{
+      flex-shrink: 0;
+    }
+    
+    .item2{
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+
+    
+    .item3{
+      flex-grow: 4;
+      flex-basis: 0;
+    } */
+
+
+  </style>
+
+</head>
+<body>
+
+  <div class="flex-container">
+
+    <div class="item item1">
+      item 1
+    </div>
+
+    
+    <div class="item item2">
+      item 2
+    </div>
+
+    
+    <div class="item item3">
+      item 3
+    </div>
+
+  </div>
+  
+</body>
+</html>
